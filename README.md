@@ -47,7 +47,8 @@ This project studies the effect of various augmentation strategies on object det
 `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`  
 `pip install albumentations opencv-python matplotlib pandas numpy tqdm`
 
-⚠️ You can simply run the Notebook in your google colab, pretarined models are already available here make sure to import them properly 
+⚠️ Note: To quickly test results, open the notebook in Google Colab.
+Pretrained models are included under the model/ directory — just load them using the provided load_trained_model() function before running the evaluation cells.
 
 ---
 
@@ -89,10 +90,10 @@ Or open it in **Google Colab** (a Drive-mount cell is already included).
 
 ### 🔍 Key Insights
 - Simple augmentations like **Flip** and **Crop** improved IoU by ≈ 6–7% over baseline.  
-- Over-complex **Mixed** augmentation reduced performance. This was becasue same epoch were used but for mixed augmentation epoch should be increased considering the increase in dataset. 
+- Overly complex “Mixed” augmentation showed lower performance because the number of training epochs remained the same. Since the mixed augmentation effectively increases the dataset size, more epochs would be needed to achieve full convergence. 
 - Effectiveness depends on dataset size and diversity.
 
-See detailed plots and comparisons in [report/report.pdf](./report/report.pdf).
+See detailed plots and comparisons in [report.pdf](./report.pdf).
 
 ---
 
