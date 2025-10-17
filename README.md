@@ -14,15 +14,6 @@ All experiments focus on a single class — **cow** — to simulate low-data sce
 
 ## 📁 Project Structure
 
-.  
-├── notebooks/  
-│   └── NN_PROJECT_CODE.ipynb – Main Jupyter notebook (training + evaluation)  
-├── report/  
-│   └── report.pdf – Full report with analysis and figures  
-├── data/ – (ignored) Pascal VOC dataset folder  
-├── outputs/ – Checkpoints, metrics, and plots  
-├── .gitignore  
-└── README.md  
 
 ---
 
