@@ -12,11 +12,6 @@ All experiments focus on a single class — **cow** — to simulate low-data sce
 
 ---
 
-## 📁 Project Structure
-
-
----
-
 ## 🚀 Overview
 
 This project studies the effect of various augmentation strategies on object detection accuracy under limited data conditions.
@@ -52,7 +47,7 @@ This project studies the effect of various augmentation strategies on object det
 `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`  
 `pip install albumentations opencv-python matplotlib pandas numpy tqdm`
 
-⚠️ Adjust the PyTorch command for your CUDA or CPU setup.
+⚠️ You can simply run the Notebook in your google colab, pretarined models are already available here make sure to import them properly 
 
 ---
 
@@ -94,7 +89,7 @@ Or open it in **Google Colab** (a Drive-mount cell is already included).
 
 ### 🔍 Key Insights
 - Simple augmentations like **Flip** and **Crop** improved IoU by ≈ 6–7% over baseline.  
-- Over-complex **Mixed** augmentation reduced performance.  
+- Over-complex **Mixed** augmentation reduced performance. This was becasue same epoch were used but for mixed augmentation epoch should be increased considering the increase in dataset. 
 - Effectiveness depends on dataset size and diversity.
 
 See detailed plots and comparisons in [report/report.pdf](./report/report.pdf).
@@ -130,23 +125,6 @@ Repeat for each augmentation type (`baseline`, `flip`, `crop`, `rotate`, `mix`) 
 
 ---
 
-## 🧰 Recommended .gitignore
-
-__pycache__/  
-*.pyc  
-.venv/  
-.env  
-data/  
-outputs/  
-runs/  
-checkpoints/  
-*.pth  
-.ipynb_checkpoints/  
-.DS_Store  
-Thumbs.db  
-
----
-
 ## 🪪 License
 
 This project is released under the **MIT License**.  
@@ -167,7 +145,6 @@ Pascal VOC 2012 dataset follows its original license.
 
 *Data Augmentation for Object Detection: A Comparative Study of Transformation Techniques.*  
 Neural Networks Course Project, July 2025.  
-Authors: Abdul Wahab et al.
 
 ---
 
