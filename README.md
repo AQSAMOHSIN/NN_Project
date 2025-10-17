@@ -8,7 +8,7 @@
 A compact but complete project comparing **data augmentation techniques** for **object detection** using **Faster R-CNN (MobileNetV3-Large 320 FPN)** on the **Pascal VOC 2012** dataset.  
 All experiments focus on a single class — **cow** — to simulate low-data scenarios.
 
-📄 Full technical report → [report/report.pdf](./report/report.pdf)
+📄 Full technical report → [report.pdf](./report.pdf)
 
 ---
 
